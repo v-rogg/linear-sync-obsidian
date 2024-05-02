@@ -103,7 +103,6 @@ export class LinearSyncSettingTab extends PluginSettingTab {
 				drop.setValue(this.plugin.settings.cancelledWorkflowState)
 				drop.onChange(async (value) => {
 					this.plugin.settings.cancelledWorkflowState = value
-					console.log(value)
 					await this.plugin.saveSettings();
 				});
 			})
